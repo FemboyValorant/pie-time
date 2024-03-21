@@ -19,6 +19,8 @@ html {
 #seekbar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #piechart {
@@ -45,5 +47,16 @@ html {
 }
 
 #pause {
+    width: 50px;
+}
+
+#percent {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#extendpercent {
     width: 50px;
 }

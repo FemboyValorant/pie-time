@@ -1,5 +1,5 @@
 // 1 minute = 60 seconds = 60000 milliseconds
-let totalMinutes = 5;
+let totalMinutes = 0.5;
 let totalMilliseconds = totalMinutes * 1000 * 60;
 let pauseFlag = false;
 
@@ -22,8 +22,9 @@ pauseButton.addEventListener('click', () => {
 })
 
 const extendButton = document.querySelector("#extend");
-extendButton.addEventListener('click', () => piePercent -= 10)
+extendButton.addEventListener('click', () => piePercent -= document.querySelector("#extendpercent").value)
 
+const percentDisplay = document.querySelector("#percent");
 let piePercent = 0;
 var t = setInterval(() => {
 
@@ -32,11 +33,13 @@ var t = setInterval(() => {
             piePercent = 0;
         }
 
-        chart.style.background = "conic-gradient( #8A9A5B " + piePercent + "%, rgba(255, 0, 0, 0) 0)";
+        chart.style.background = "conic-gradient(#8A9A5B " + piePercent + "%, rgba(255, 0, 0, 0) 0)";
         piePercent += 0.2;
         if (piePercent > 105){
             clearInterval(t);
         }
+
+        percentDisplay.textContent = piePercent.toFixed(1) + "%";
     }
 
         
