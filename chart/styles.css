@@ -1,3 +1,11 @@
+:root {
+--maingreen: #8A9A5B;
+}
+
+html {
+    background-color: var(--maingreen);
+}
+
 #piechart {
     width:400px;
     height:400px;
@@ -8,4 +16,5 @@
         gray 0 15%
     );
     filter: drop-shadow(20px 10px 10px black);
+
 }
