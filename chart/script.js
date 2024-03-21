@@ -35,11 +35,16 @@ var t = setInterval(() => {
 
         chart.style.background = "conic-gradient(#8A9A5B " + piePercent + "%, rgba(255, 0, 0, 0) 0)";
         piePercent += 0.2;
+
+        percentDisplay.textContent = piePercent.toFixed(1) + "%";
+
+        if (piePercent > 100){
+            percentDisplay.textContent = "Done!";
+        }
+        
         if (piePercent > 105){
             clearInterval(t);
         }
-
-        percentDisplay.textContent = piePercent.toFixed(1) + "%";
     }
 
         
