@@ -8,10 +8,17 @@ html {
 
 #container {
     width: 100%;
+    height: 415px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-flow: column;
+}
+
+#seekbar {
+    display: flex;
+    justify-content: center;
 }
 
 #piechart {
