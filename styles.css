@@ -1,0 +1,10 @@
+#piechart {
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+    background: conic-gradient(
+        purple 70deg,
+        cyan 0 235deg,
+        gray 0 55deg
+    );
+}
