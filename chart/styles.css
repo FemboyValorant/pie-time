@@ -43,3 +43,7 @@ html {
     /* filter: drop-shadow(20px 10px 10px black); */
 
 }
+
+#pause {
+    width: 50px;
+}

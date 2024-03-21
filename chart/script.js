@@ -9,11 +9,13 @@ const pauseButton = document.querySelector("#pause");
 pauseButton.addEventListener('click', () => {
     switch (true){
         case pauseFlag === false:
-            console.log("Paused")
+            console.log("Paused");
+            document.querySelector("#pause").src = "images/play.png";
             pauseFlag = true;
             break;
         default:
             console.log("Unpaused");
+            document.querySelector("#pause").src = "images/pause.png";
             pauseFlag = false;
             break;
     }
