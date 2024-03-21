@@ -3,8 +3,9 @@
     height:400px;
     border-radius: 50%;
     background: conic-gradient(
-        purple 70deg,
-        cyan 0 235deg,
-        gray 0 55deg
+        purple 25%,
+        cyan 0 60%,
+        gray 0 15%
     );
+    filter: drop-shadow(20px 10px 10px black);
 }
