@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productivity Pie</title>
+<link rel="stylesheet" href="inputField.css">
+</head>
+<body>
+  <div class="container">
+  <h1 class="title">Productivity Pie</h1>
+
+      <ul id="task-list" class="growing-search-freebie">
+          <li>
+              <div class="growing-search">
+                  <div class="input">
+                         <input type="text" id="task-name" placeholder="Enter task"/>
+                      <input type="number" id="task-number" placeholder="Enter number" min="1"/>
+                      <input type="color" id="task-color" value="#000000"/>
+                  </div>
+           <div class="submit"></div>
+              </div>
+          </li>
+      </ul>
+      <button class="add" id="add-task-button" type="button">Add Task</button>
+  </div>
+
+<script src="inputField.js" type="module"></script>
+</body>
+</html>
+
+
