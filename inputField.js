@@ -18,10 +18,10 @@ let totalMinutes = 0; // Variable to keep track of the total number of minutes
 
 addButton.addEventListener("click", function() {
     const taskName = taskNameInput.value;
-    const taskNumber = parseInt(taskNumberInput.value);
+    let taskNumber = parseInt(taskNumberInput.value);
 
     if (taskName && !isNaN(taskNumber) && taskNumber > 0) {
-        push(taskListRef, { name: taskName, number: taskNumber });
+        push(taskListRef, { name: taskName, number: taskNumber *= 60 });
         totalTasks++; // Increment totalTasks
         totalMinutes += taskNumber; // Add the minutes of the new task
         clearInputFields(); // Call the function to clear input fields after adding to the database
