@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Productivity Pie</title>
-<link rel="stylesheet" href="inputField.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -14,19 +14,17 @@
           <li>
               <div class="growing-search">
                   <div class="input">
-                         <input type="text" id="task-name" placeholder="Enter task"/>
+                        <input type="text" id="task-name" placeholder="Enter task"/>
                       <input type="number" id="task-number" placeholder="Enter number" min="1"/>
-                      <input type="color" id="task-color" value="#000000"/>
                   </div>
            <div class="submit"></div>
               </div>
           </li>
       </ul>
-      <button class="add" id="add-task-button" type="button">Add Task</button>
+      <button class="add" id="add-task-button">Add Task</button>
+      <button class="add" onclick="window.location.href = 'pie.html';">Start</button>
   </div>
 
 <script src="inputField.js" type="module"></script>
 </body>
 </html>
-
-

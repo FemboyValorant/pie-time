@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Pie Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="pauseButton">Pause/Resume</button>
+        <button id="skipButton">Skip</button>
+        <button class="add" onclick="window.location.href ='index.html';" id ="goBackButton">Go back</button>
+        <canvas id="taskPieChart" width="400" height="400" style="max-width: 400px; max-height: 400px;"></canvas>
+    </div>
+    <script src="pie.js" type="module"></script>
+</body>
+</html>
