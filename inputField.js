@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue, remove  } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
-    databaseURL: "https://grocery-helper-653fd-default-rtdb.firebaseio.com/" // Correct database URL
+    databaseURL: "https://nice-words-7dde7-default-rtdb.firebaseio.com/" // Correct database URL
 }
 
 const app = initializeApp(appSettings);
@@ -21,7 +21,7 @@ addButton.addEventListener("click", function() {
     let taskNumber = parseInt(taskNumberInput.value);
 
     if (taskName && !isNaN(taskNumber) && taskNumber > 0) {
-        push(taskListRef, { name: taskName, number: taskNumber *= 60 });
+        push(taskListRef, { name: taskName, number: taskNumber  });
         totalTasks++; // Increment totalTasks
         totalMinutes += taskNumber; // Add the minutes of the new task
         clearInputFields(); // Call the function to clear input fields after adding to the database
